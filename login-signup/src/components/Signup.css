@@ -1,0 +1,78 @@
+/* Signup.css */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    overflow: hidden;
+}
+
+.signup-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1.animated {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #0056b3;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #007BFF;
+}
+
+p.animated {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.login-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0056b3;
+    transition: color 0.2s;
+}
+
+.login-link:hover {
+    color: #007BFF;
+}
